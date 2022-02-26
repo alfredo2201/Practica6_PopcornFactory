@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="@string/series"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/yellow"
+        />
+
+    <GridView
+        android:id="@+id/gv_series"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:numColumns="3"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="@string/movies"
+        android:layout_margin="20dp"
+        android:layout_gravity="right"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/yellow"
+        />
+    <GridView
+        android:id="@+id/gv_movies"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:numColumns="3">
+    </GridView>
+
+
+</LinearLayout>

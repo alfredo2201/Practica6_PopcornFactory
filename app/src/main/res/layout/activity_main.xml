@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".Inicio">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/popcorn" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="35dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/dirty_white"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/welcome"
+        />
+    <Button
+        android:id="@+id/button_get_me_in"
+        android:layout_width="219dp"
+        android:layout_height="40dp"
+        android:text="@string/button_start"
+        android:background="@drawable/round_button"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>
