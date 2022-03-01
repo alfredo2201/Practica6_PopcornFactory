@@ -4,4 +4,7 @@
     <string name="series">SERIES</string>
     <string name="movies">MOVIES</string>
     <string name="welcome">Welcome to Popcorn Factory, home of the best series and movies. Just lay down make some popcorn and enjoy!</string>
+    <string name="todo">TODO</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipipcing_elt_sad_do">Lorem ipsum dolor sit amet, consectetur adipipcing elt sad do</string>
+    <string name="bones">BONES</string>
 </resources>

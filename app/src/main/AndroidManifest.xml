@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PopcornFactory">
         <activity
+            android:name=".SeatSelection"
+            android:exported="false" />
+        <activity
             android:name=".Inicio"
             android:exported="false" />
         <activity
