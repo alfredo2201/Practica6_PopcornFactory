@@ -17,11 +17,12 @@ class DetallePelicula : AppCompatActivity() {
         if(bundle != null){
             ns = bundle.getInt("numberSeats")
             iv_imagen_pelicula.setImageResource(bundle.getInt("header"))
-            tv_TituloPelicula.text = bundle.getString("nombre")
+            tv_TituloPelicula.text = bundle.getString("titulo")
             tv_DescPelicula.text = bundle.getString("sinopsis")
             seatsLeft.text = "$ns seats available"
             id = bundle.getInt("pos")
             title = bundle.getString("titulo")!!
+
         }
 
         if(ns == 0){
@@ -31,7 +32,6 @@ class DetallePelicula : AppCompatActivity() {
                 val intent: Intent = Intent(this, SeatSelection::class.java)
                 intent.putExtra("id",id)
                 intent.putExtra("title",title)
-
                 startActivity(intent)
             }
         }

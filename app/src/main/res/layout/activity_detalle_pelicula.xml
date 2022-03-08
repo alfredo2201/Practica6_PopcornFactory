@@ -46,18 +46,27 @@
                 />
         </LinearLayout>
 
-
-        <TextView
-            android:id="@+id/tv_DescPelicula"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipipcing elt sad do"
-            android:textSize="15sp"
-            android:padding="10dp"
-            android:justificationMode="inter_word"
-            android:textColor="@color/dirty_white"
-            />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <TextView
+                    android:id="@+id/tv_DescPelicula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:justificationMode="inter_word"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipipcing elt sad do"
+                    android:textColor="@color/dirty_white"
+                    android:textSize="15sp" />
+            </ScrollView>
+        </LinearLayout>
+
 
     </LinearLayout>
     <Button
@@ -76,7 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textColor="@color/grisClaro"
-        android:text="hola"
+        android:text="Number tickets"
         android:textStyle="italic"
         android:layout_marginTop="7dp"
         android:id="@+id/seatsLeft"

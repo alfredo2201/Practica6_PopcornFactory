@@ -7,4 +7,5 @@
     <string name="todo">TODO</string>
     <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipipcing_elt_sad_do">Lorem ipsum dolor sit amet, consectetur adipipcing elt sad do</string>
     <string name="bones">BONES</string>
+    <string name="complete_reservation">Complete reservation</string>
 </resources>

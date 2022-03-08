@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".ReservationActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/complete_reservation"
+            android:textColor="@color/yellow"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="4dp"
+            android:background="@color/yellow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/client_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Introduce your name"
+            android:textColor="@color/dirty_white"
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:text="Payment method"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp">
+
+            <RadioButton
+                android:id="@+id/radio_cash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:buttonTint="@color/yellow"
+                android:minHeight="48dp"
+                android:text="Cash"
+                android:textColor="@color/dirty_white" />
+
+            <RadioButton
+                android:id="@+id/radio_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:buttonTint="@color/yellow"
+                android:minHeight="48dp"
+                android:text="Credit/Debit Card"
+                android:textColor="@color/dirty_white" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Number Seat"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/number_seat"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="10"
+            android:textColor="@color/dirty_white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_complete_purchase"
+        android:layout_width="230dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/round_button"
+        android:text="Confirm your purchase"
+        android:textColor="@color/black"
+        />
+
+
+</LinearLayout>
